@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F4F8F7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_record_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#087F72" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:labelFor="@id/etDate"
+            android:text="@string/record_date_label"
+            android:textColor="#17312E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="date"
+            android:focusable="true"
+            android:clickable="true"
+            android:maxLines="1"
+            android:importantForAutofill="no"
+            android:textColor="#17312E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@id/etSteps"
+            android:text="@string/steps_label"
+            android:textColor="#17312E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:importantForAutofill="no"
+            android:textColor="#17312E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@id/etCalories"
+            android:text="@string/calories_label"
+            android:textColor="#17312E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etCalories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:importantForAutofill="no"
+            android:textColor="#17312E" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:labelFor="@id/etWater"
+            android:text="@string/water_label"
+            android:textColor="#17312E"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/etWater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:importantForAutofill="no"
+            android:textColor="#17312E" />
+
+        <Button
+            android:id="@+id/btnSaveRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:minHeight="48dp"
+            android:text="@string/save_record" />
+
+    </LinearLayout>
+</ScrollView>
